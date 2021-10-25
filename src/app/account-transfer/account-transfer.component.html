@@ -1,0 +1,33 @@
+<div class="account-transfer__main payment-form">
+            <form [formGroup]="formdata" (ngSubmit)="onSubmitData(formdata.value)" >
+            <fieldset>
+               <legend>
+                  <h1 class="page-title">Account Transfer</h1>
+               </legend>
+               <div class="form-group">
+                  <label for="accountnumber">Account number: </label>
+                  <input type="tel" name="accountnumber" formControlName="accountnumber"
+                     placeholder="Enter account number">
+               </div>
+               <div  class="form-group">
+                  <label for="username">User name: </label>
+                  <input type="text" name="username" formControlName="username"
+                     placeholder="Enter username">
+               </div>
+               <div  class="form-group">
+                  <label for="ifsc">Ifsc: </label>
+                  <input type="text" name="ifsc" formControlName="ifsc"
+                     placeholder="Enter ifsc code">
+               </div>
+               <div class="form-group">
+                  <label for="amount">Amount: </label>
+                  <input type="tel" name="amount" formControlName="amount"
+                     placeholder="Enter amount">
+               </div>
+               <div class="form-group form-btn">
+                  <button type="submit"  [disabled]="!formdata.valid"
+                     class="btn btn-block">Submit</button>
+               </div>
+            </fieldset>
+            </form>  
+</div>

@@ -1,0 +1,23 @@
+<div class="upi-main payment-form">
+            <form [formGroup]="formdata" (ngSubmit)="onSubmitData(formdata.value)" >
+            <fieldset>
+               <legend>
+                  <h1 class="page-title">UPI Payments</h1>
+               </legend>
+               <div  class="form-group">
+                  <label for="accountnumber">Upi id: </label>
+                  <input type="tel" name="username" formControlName="upiId"
+                     placeholder="Enter upi id">
+               </div>
+               <div  class="form-group">
+                  <label for="accountnumber">Enter amount </label>
+                  <input type="tel" name="amount" formControlName="amount"
+                     placeholder="Enter amount">
+               </div>
+               <div class="form-group form-btn">
+                  <button type="submit"  [disabled]="!formdata.valid"
+                     class="btn btn-block">Submit</button>
+               </div>
+            </fieldset>
+            </form>  
+</div>

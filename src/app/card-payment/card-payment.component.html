@@ -1,0 +1,38 @@
+<div class="card-payment__main payment-form">
+            <form [formGroup]="formdata" (ngSubmit)="onSubmitData(formdata.value)" >
+            <fieldset>
+               <legend>
+                  <h1 class="page-title">Card Payment</h1>
+               </legend>
+               <div  class="form-group">
+                  <label for="cardNum">Amount: </label>
+                  <input type="tel" name="amount" formControlName="amount"
+                     placeholder="Enter amount">
+               </div>
+               <div  class="form-group">
+                  <label for="cardNum">Card number: </label>
+                  <input type="text" name="cardNum" formControlName="cardNum"
+                     placeholder="Enter the card number">
+               </div>
+               <div  class="form-group">
+                  <label for="expiryDate">Expiry Date: </label>
+                  <input type="text" name="expiryDate" formControlName="expiryDate"
+                     placeholder="Enter Expiry date">
+               </div>
+               <div  class="form-group">
+                  <label for="cvv">CVV: </label>
+                  <input type="text" name="cvv" formControlName="cvv"
+                     placeholder="Enter CVV">
+               </div>
+               <div  class="form-group">
+                  <label for="username">User name: </label>
+                  <input type="tel" name="username" formControlName="username"
+                     placeholder="Enter name on the card">
+               </div>
+               <div  class="form-group form-btn">
+                  <button type="submit"  [disabled]="!formdata.valid"
+                     class="btn btn-block">Submit</button>
+               </div>
+            </fieldset>
+            </form>  
+</div>

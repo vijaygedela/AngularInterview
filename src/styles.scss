@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+.page-title {
+    text-align: center;
+}
+.payment-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   form{
+      width: 60%;
+      fieldset{
+        padding: 0 30px;
+      }
+    }
+
+    .form-group{
+      clear: both;
+      height: 50px;   
+      width: 100%;
+      margin-bottom: 20px;
+      label{
+          font-size: 16px;
+          text-align: right;
+          width: 30%;
+          float: left;   
+          padding-top: 12px;       
+        }
+        input{
+          height: 40px;
+          float: right;
+          width: 65%;
+          border-radius: 2px;
+          padding-left: 10px;
+          border: 1px solid #000;
+          outline: none;
+        }
+        &.form-btn{
+            text-align: center;
+            button{
+              height:40px;
+              width:200px;
+              padding:10px;
+              background:#528af1;
+              color:white;
+              border-radius: 2px;
+              border:1px solid #528af1
+              }
+              button[disabled=disabled], button:disabled {
+               opacity:0.6;
+               pointer-events: none;
+              }
+        }
+       
+    }
+  
+  }

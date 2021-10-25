@@ -1,0 +1,21 @@
+.sidemenu { 
+    left: 0;
+    top: 0;
+    width: 200px;
+    background:#0057b8;
+    height: 100%;
+    color: white;
+    position:fixed;
+    &_items--list {
+        li{
+            list-style-type: none;
+            padding:10px 5px;
+            a{
+                cursor: pointer;
+            }
+        }
+    }
+    h3{
+        text-align: center;
+    }
+}

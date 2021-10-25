@@ -1,0 +1,8 @@
+.main-content{
+    margin-left:190px;
+    width:calc(100% - 200px);
+    &__section{
+        margin-top:60px;
+        padding:10px;
+    }
+}
